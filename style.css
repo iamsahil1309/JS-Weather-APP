@@ -1,4 +1,4 @@
-
+/* styles.css */
 * {
     margin: 0;
     padding: 0;
@@ -7,109 +7,68 @@
 
 body {
     font-family: Arial, sans-serif;
-    min-height: 100vh;
-
+    background-color: #121212;
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background: #0f0f0fcb;
+    height: 100vh;
 }
 
-.hidden {
-    display : none;
-}
-
-.weather-container {
+.container {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
     width: 400px;
-    padding: 30px;
-
-    background: white;
-    border-radius: 15px;
-
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.weather-container h1 {
-    margin-bottom: 25px;
-    color: #333;
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
-/* Search section */
-
-.search-box {
+.input-container {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.search-box input {
-    width: 100%;
-    padding: 12px;
-
-    border: 1px solid #ccc;
-    border-radius: 8px;
-
-    font-size: 15px;
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
     outline: none;
 }
 
-.search-box input:focus {
-    border-color: #2196f3;
-}
-
-.search-box button {
-    padding: 12px 15px;
-
+button {
+    width: 25%;
+    padding: 10px;
+    background-color: #6200EA;
     border: none;
-    border-radius: 8px;
-
-    background-color: #2196f3;
-    color: white;
-
-    font-size: 14px;
+    border-radius: 5px;
+    color: #FFF;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.search-box button:hover {
-    background-color: #1976d2;
+button:hover {
+    background-color: #3700B3;
 }
 
-/* Error message */
-
-.error-message {
+#weather-info {
     margin-top: 20px;
-
-    color: #e53935;
-    font-size: 14px;
 }
 
-/* Weather details */
-
-.weather-details {
-    margin-top: 25px;
-    padding: 20px;
-
-    background-color: #f5f9ff;
-    border-radius: 10px;
+.hidden {
+    display: none;
 }
 
-.weather-details h2 {
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.temperature {
-    margin-bottom: 10px;
-
-    font-size: 45px;
-    font-weight: bold;
-    color: #2196f3;
-}
-
-.description {
-    color: #666;
-    font-size: 18px;
-    text-transform: capitalize;
+#error-message {
+    color: #FF5722;
+    margin-top: 20px;
 }

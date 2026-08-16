@@ -1,5 +1,4 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,27 +6,19 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div class="weather-container">
+    <div class="container">
       <h1>Weather App</h1>
-
-      <div class="search-box">
-        <input type="text" placeholder="Enter city name" class="city-input" />
-        <button type="button" class="get-weather">Get Weather</button>
+      <div class="input-container">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="get-weather-btn">Get Weather</button>
       </div>
-
-      <!-- Error message -->
-      <p class="error-message hidden">
-        City not found. Please enter a valid city name.
-      </p>
-
-      <!-- Weather details -->
-      <div class="weather-details hidden">
-        <h2 class="city-name"></h2>
-        <p class="temperature"></p>
-        <p class="description"></p>
+      <div id="weather-info" class="hidden">
+        <h2 id="city-name"></h2>
+        <p id="temperature"></p>
+        <p id="description"></p>
       </div>
+      <p id="error-message" class="hidden">City not found. Please try again.</p>
     </div>
     <script src="app.js"></script>
   </body>
