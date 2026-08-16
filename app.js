@@ -7,23 +7,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const tempratureDisplay = document.getElementsByClassName('temprature')
     const descriptionDisplay = document.getElementsByClassName('description')
 
-    getWeather.addEventListener('click', async () => {
+    getWeather.addEventListener('click',async () => {
         const city = inputCity.value.trim()
         if(!city) return
         try {
             const weatherData = await fetchWeatherData(city)
-            displayWeather(weatherData)
+            displayWeatherData(weatherData)
         } catch (error) {
-            errorMessage()
+            errorMsg()
         }
-
     })
 
-    async function fetchWeatherData(city) {}
+    async function fetchWeatherData(city){}
 
-    function displayWeather(weatherData){}
+    function displayWeatherData(){}
 
-    function errorMessage(){
+    function errorMsg(){
         weatherDetail.classList.add('hidden')
         error.classList.remove('hidden')
     }
