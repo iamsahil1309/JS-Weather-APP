@@ -13,19 +13,18 @@
       <h1>Weather App</h1>
 
       <div class="search-box">
-        <input type="text" placeholder="Enter city name" />
-
-        <button type="button">Get Weather</button>
+        <input type="text" placeholder="Enter city name" class="city-input" />
+        <button type="button" class="get-weather">Get Weather</button>
       </div>
 
       <!-- Error message -->
-      <p class="error-message">
-        <!-- City not found. Please enter a valid city name. -->
+      <p class="error-message hidden">
+        City not found. Please enter a valid city name.
       </p>
 
       <!-- Weather details -->
-      <div class="weather-details">
-        <h2></h2>
+      <div class="weather-details hidden">
+        <h2 class="city-name"></h2>
         <p class="temperature"></p>
         <p class="description"></p>
       </div>
