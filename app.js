@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(!response.ok) {
             throw new Error('City not found. Try Again!')
         }
-        const data = response.json()
+        const data = await response.json()
         return data
     }
 
